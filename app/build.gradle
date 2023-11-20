@@ -7,6 +7,10 @@ android {
     namespace 'ca.qc.gestiondessuccursales'
     compileSdk 33
 
+    viewBinding {
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "ca.qc.gestiondessuccursales"
         minSdk 29
