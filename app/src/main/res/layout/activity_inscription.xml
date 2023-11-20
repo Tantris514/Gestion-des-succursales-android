@@ -19,7 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Title -->
 
         <TextView
             android:id="@+id/titre"
@@ -49,7 +48,6 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Identify Yourself -->
     <TextView
         android:id="@+id/tvIdentify"
         android:layout_width="wrap_content"
@@ -84,24 +82,54 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tbMatricule" />
 
-    <Button
-        android:id="@+id/btnConnexion"
+    <EditText
+        android:id="@+id/tbConfirmMotDePasse"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/connexion"
-        app:layout_constraintTop_toBottomOf="@id/tbMotDePasse"
+        android:hint="@string/confirmer_mot_de_passe"
+        android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/btnInscription" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbMotDePasse" />
 
-    <!-- Button for 'Inscription' -->
+    <EditText
+        android:id="@+id/tbPrenom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/prenom"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbConfirmMotDePasse" />
+
+    <EditText
+        android:id="@+id/tbNom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nom"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbPrenom" />
+
+
     <Button
-        android:id="@+id/btnInscription"
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enregistrer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnConnexion2"
+        app:layout_constraintTop_toBottomOf="@+id/tbNom" />
+
+    <Button
+        android:id="@+id/btnConnexion2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/inscription"
-        app:layout_constraintTop_toBottomOf="@id/tbMotDePasse"
-        app:layout_constraintLeft_toRightOf="@id/btnConnexion"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintLeft_toRightOf="@id/btnEnregistrer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbNom" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

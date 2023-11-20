@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Gestion des succursales</string>
+    <string name="gestion_des_succursales">Gestion des succursales</string>
+    <string name="par_tristan_guilherme_et_rafael">par Tristan, Guilherme et Rafael</string>
+    <string name="clickez_ici_pour_voir_la_documentation_de_l_api">Clickez ici pour voir la documentation de l\'api</string>
+    <string name="identifiez_vous">Identifiez-vous !</string>
+    <string name="identifiant">Identifiant</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="connexion">Connexion</string>
+    <string name="inscription">Inscription</string>
+    <string name="Par_tristan_guilherme_et_rafael2">par Tristan, Guilherme et Rafael</string>
+    <string name="tristan_blond_guilherme_et_rafael_castro">© Tristan Blond, Guilherme et Rafael Castro</string>
+    <string name="clickez_ici_pour_voir_la_documentation_de_l_api2">Clickez ici pour voir la documentation de l\'api</string>
+    <string name="confirmer_mot_de_passe">confirmer mot de passe</string>
+    <string name="prenom">Prenom</string>
+    <string name="nom">Nom</string>
+    <string name="enregistrer">Enregistrer</string>
 </resources>
