@@ -135,7 +135,7 @@
             app:layout_constraintBottom_toTopOf="@+id/footerLink" />
 
         <TextView
-            android:id="@+id/footerLink"
+            android:id="@+id/docLink"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="115dp"

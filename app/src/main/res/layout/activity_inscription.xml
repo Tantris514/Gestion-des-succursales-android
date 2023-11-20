@@ -126,7 +126,7 @@
         android:id="@+id/btnConnexion2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/inscription"
+        android:text="@string/connexion"
         app:layout_constraintLeft_toRightOf="@id/btnEnregistrer"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tbNom" />
@@ -176,7 +176,7 @@
             app:layout_constraintTop_toBottomOf="@id/footerAuthors" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/docLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="31dp"
