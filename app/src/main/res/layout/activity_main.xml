@@ -104,7 +104,6 @@
         app:layout_constraintRight_toRightOf="parent" />
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/footerInfo"
         android:layout_width="match_parent"
@@ -115,15 +114,14 @@
         app:layout_constraintRight_toRightOf="parent">
 
         <ImageView
-            android:id="@+id/footerTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gestion des succursales"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            android:id="@+id/footerImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logog"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerInside"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/footerAuthors"
@@ -132,22 +130,31 @@
             android:text=" par Tristan, Guilherme et Rafael"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/footerTitle"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintStart_toEndOf="@id/footerImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/footerLink" />
 
         <TextView
             android:id="@+id/footerLink"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="115dp"
             android:text="Clickez ici pour voir la documentation de l'api"
             android:textColor="#ff0000"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/footerAuthors"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintStart_toEndOf="@+id/footerImage"
+            app:layout_constraintStart_toStartOf="@id/footerImage"
+            app:layout_constraintTop_toBottomOf="@id/footerAuthors" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:text="© Tristan Blond, Guilherme et Rafael Castro"
+            app:layout_constraintStart_toEndOf="@+id/footerImage"
+            app:layout_constraintTop_toBottomOf="@+id/footerLink" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
